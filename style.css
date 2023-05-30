@@ -1,0 +1,72 @@
+/* The following code represents a CSS stylesheet that styles various elements in an HTML document for a “Jump Game”. 
+ It sets up styles for a game container, a character element and a block element. 
+ It also defines two animations - jump and block - that can be applied to these elements.
+ The jump animation moves an element up and down, while block animation moves an element horizontally from right to left.
+ The stylesheet also centers text within paragraph elements. */
+ 
+*{
+    padding: 0; /* Removes padding from all elements */
+    margin: 0; /* Removes margin from all elements */
+    overflow-x: hidden; /* Prevents horizontal scrolling on all elements */
+}
+
+.wrapper { /* This code starts a CSS rule for elements with class "wrapper" */
+		width: auto;
+		height: auto;
+		background-color: #d98cb3;
+		padding: 20px;
+		border-color: black;
+		border-style: groove;
+		border-width: 5px;
+	}
+.wrapper2 { /* This code starts a CSS rule for elements with class "wrapper" */
+		width: auto;
+		height: auto;
+		background-color: #000000;
+		padding: 20px;
+		border-color: black;
+		border-style: groove;
+		border-width: 5px;
+	}
+.game{
+	background-color: #d98cb3;
+    width: 90%; /* Sets the width of the game container */
+    height: 310px; /* Sets the height of the game container */
+    border: 3px solid black; /* Adds a black border around the game container */
+    margin: auto; /* Centers the game container horizontally */
+}  
+#character{
+	background-color: #d98cb3;
+    width: 220px; /* Sets the width of the character element */
+    height: 160px; /* Sets the height of the character element */
+	overflow: hidden;
+    position: relative;/* Positions the character element relative to its normal position */
+    top: 150px; /* Moves the character element 150px down from its normal position */
+}
+.animate{
+    animation: jump 0.3s linear; /* Applies the 'jump' animation to elements with class 'animate' for a duration of 0.3 seconds with a linear timing function */
+}
+@keyframes jump{
+    0%{top: 150px;} /* At the start of the animation, the 'top' property is set to 150px */
+    30%{top: 100px;} /* At 30% of the animation duration, the 'top' property is set to 100px */
+    70%{top: 100px;} /* At 70% of the animation duration, the 'top' property remains at 100px */
+    100%{top: 150px;} /* At the end of the animation, the 'top' property is set back to 150px */
+}
+
+#block{
+	background-color: #0000ff;
+    width: 50px; /* Sets the width of the block element */
+    height: 50px; /* Sets the height of the block element */
+	overflow: hidden;
+    position: relative; /* Positions the block element relative to its normal position */
+    top: 100px; /* Moves the block element 130px down from its normal position */
+    left: 100%; /* Moves the block element 100% left from its normal position */
+    animation: block 1s infinite linear; /* Applies the 'block' animation to elements with id 'block' for a duration of 2 seconds with a linear timing function and repeats it infinitely*/
+}
+@keyframes block{
+    0%{left: 100%} /* At the start of the animation, the 'left' property is set to 100% */
+    100%{left: -20px} /* At the end of the animation, the 'left' property is set to -20px */
+}
+p{
+    text-align: center; /* Centers text within paragraph elements*/
+}

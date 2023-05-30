@@ -1,0 +1,63 @@
+<!-- The following code represents an HTML5 document that sets up a basic structure for a “Simple Jump Game”.
+ It includes a container for game elements, elements representing a character and a block in the game, and a paragraph to display the current score.
+ It also links to an external CSS file to style the page and an external JavaScript file to add interactivity. 
+ When a user clicks anywhere on the page, it will call a jump() function (presumably defined in script.js) that will make the character jump.--> 
+
+<!DOCTYPE html> 
+<!-- This line specifies that the document is an HTML5 document -->
+<html lang="en" onclick="jump()"> 
+<!-- The root element of the HTML page. The 'lang' attribute specifies the language of the page content.--> 
+<!--The 'onclick' attribute calls the 'jump()' function when the user clicks anywhere on the page -->
+<head> 
+<!-- The head element contains metadata about the HTML document -->
+
+    <!-- Meta tags: -->
+    <meta charset="UTF-8"> 
+	<!-- This tag specifies that the character encoding for the HTML document is UTF-8 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- This tag is used to control the viewport, which is the user’s visible area of a web page.
+	The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device). 
+	The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.-->
+	
+    <title>Simple Jump Game</title> 
+	<!-- This line specifies the title of the HTML document, which is displayed in the browser's title bar or tab -->
+    <link rel="stylesheet" href="style.css"> 
+	<!-- This line links an external CSS file to style the HTML document -->
+</head>
+<body> 
+<div class="wrapper">
+<table width="100%" height="100%" align="center" border="0" cellspacing="5" cellpadding="5" bgcolor="#d98cb3">
+<tr>
+<td>
+<div class="game"> 
+	<!-- A container for the game elements -->
+        <div id="character"><img src="walkingMan.gif"></div>
+		<!-- An element representing the character in the game -->
+        <div id="block"></div> 
+		<!-- An element representing a block in the game -->
+		</td>
+		</tr>
+</table>
+</div> 
+</div>
+<div class="wrapper">
+<table width="100%" height="50" align="center" border="0" cellspacing="5" cellpadding="5" bgcolor="#000000">
+	<tr>
+		<td align="center">
+			<table width="100%" border="0" align="center" cellspacing="5" cellpadding="5" bgcolor="#d98cb3">
+				<tr>
+					<td width="120" align="left"><a href="AboutPage.html"><img src="back.png" width="120" height="100"></a></td>
+					<td width="100" align="center"><font face="Verdana, Geneva, sens-serif"><h2> Current Score: <span id="scoreSpan"></span></h2></font></td>
+					<!--The 'span' element with 'id' attribute 'scoreSpan' will be used to update the score dynamically -->
+					<td width="120" align="right"><a href="ExitPage.html"><img src="exit.png" width="120" height="100"></a></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table> 
+</div>
+</div>
+</body>
+<script src="script.js"></script> 
+<!-- This line links an external JavaScript file to add interactivity to the HTML document -->
+</html>
