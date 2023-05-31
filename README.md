@@ -1,5 +1,6 @@
 # Simple-Jump-Game_HTML-CSS-JavaScript
 The"Simple Jump Game" involves a character that can jump and a block that moves towards the character.⏹
+
 The goal of the game is to make the character jump over the block to avoid collision.💢
 
 The code is written in HTML, CSS, and JavaScript.📝
