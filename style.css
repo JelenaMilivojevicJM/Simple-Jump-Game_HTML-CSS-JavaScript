@@ -67,6 +67,15 @@
     0%{left: 100%} /* At the start of the animation, the 'left' property is set to 100% */
     100%{left: -20px} /* At the end of the animation, the 'left' property is set to -20px */
 }
+.navbuttons{
+	width: 140px;
+	height: 70px;
+	background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+    font-size: 20px;
+		}
+		
 p{
     text-align: center; /* Centers text within paragraph elements*/
 }
